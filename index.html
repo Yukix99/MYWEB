@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Yuki Kung</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="bg-animation"></div>
+    <div class="particles"></div>
+    <div id="cursor-glow"></div> 
+    
+    <div class="floating-icon icon-1"><i class="fas fa-code"></i></div>
+    <div class="floating-icon icon-2"><i class="fas fa-gamepad"></i></div>
+    <div class="floating-icon icon-3"><i class="fas fa-music"></i></div>
+
+    <div class="glass-card" id="card">
+        <div class="profile-section">
+            <div class="img-container">
+                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWxxOHlvc3owY2Zpb3F2cjJ4OWVteXZpY2l6MHVsbDg3dnJoZ2xkeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/q2yDZ0ObHhBTEKHeiS/giphy.gif" alt="Profile" class="profile-img">
+                <div class="status-indicator"></div> 
+            </div>
+            
+            <h1 class="typing-text">Yuki Kung ✨</h1>
+            
+            <div class="badge-container">
+                <span class="badge">Developer</span>
+                <span class="badge">Gamer</span>
+            </div>
+            
+            <p class="description">
+                เขียนโค้ด เล่นเกม กินหนม ดูอนิเมะ  <br>
+                ทักทายกันได้ครับ! 👇
+            </p>
+
+            <a href="about.html" class="about-btn">
+                <i class="fas fa-user-astronaut"></i> รู้จักเราเพิ่มเติม
+            </a>
+        </div>
+
+        <div class="links">
+            <a href="https://www.facebook.com/yuki.zx.702808" target="_blank" class="link-btn fb">
+                <div class="icon-box"><i class="fab fa-facebook-f"></i></div>
+                <span>Facebook</span>
+                <i class="fas fa-chevron-right arrow"></i>
+            </a>
+
+            <a href="https://www.instagram.com/yukikung._/" target="_blank" class="link-btn ig">
+                <div class="icon-box"><i class="fab fa-instagram"></i></div>
+                <span>Instagram</span>
+                <i class="fas fa-chevron-right arrow"></i>
+            </a>
+
+            <a href="https://discord.gg/SDWuJKgV" target="_blank" class="link-btn discord">
+                <div class="icon-box"><i class="fab fa-discord"></i></div>
+                <span>Discord</span>
+                <i class="fas fa-chevron-right arrow"></i>
+            </a>
+
+            <a href="https://github.com/Yukix99" target="_blank" class="link-btn github">
+                <div class="icon-box"><i class="fab fa-github"></i></div>
+                <span>GitHub</span>
+                <i class="fas fa-chevron-right arrow"></i>
+            </a>
+        </div>
+
+        <div class="spotify-container">
+             <iframe 
+                style="border-radius:12px" 
+                src="https://open.spotify.com/embed/track/5TTGoX70AFrTvuEtqHK37S?utm_source=generator" 
+                width="100%" 
+                height="80" 
+                frameBorder="0" 
+                allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+
+    <script>
+        // Cursor Glow Effect Only
+        const glow = document.getElementById('cursor-glow');
+        let mouseX = 0, mouseY = 0, glowX = 0, glowY = 0;
+        document.addEventListener('mousemove', (e) => { mouseX = e.clientX; mouseY = e.clientY; });
+        function animateGlow() {
+            glowX += (mouseX - glowX) * 0.15;
+            glowY += (mouseY - glowY) * 0.15;
+            glow.style.left = (glowX - 30) + 'px'; 
+            glow.style.top = (glowY - 30) + 'px';
+            requestAnimationFrame(animateGlow);
+        }
+        animateGlow();
+    </script>
+</body>
+</html>

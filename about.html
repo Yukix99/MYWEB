@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Yuki Kung</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="bg-animation"></div>
+    <div class="particles"></div>
+    <div id="cursor-glow"></div> 
+    
+    <div class="glass-card glass-card-wide">
+        
+        <div class="about-header">
+            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWxxOHlvc3owY2Zpb3F2cjJ4OWVteXZpY2l6MHVsbDg3dnJoZ2xkeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/q2yDZ0ObHhBTEKHeiS/giphy.gif" alt="Profile" class="profile-img-small">
+            <div class="header-text">
+                <h2>About Me 🚀</h2>
+                <span class="subtitle">รู้จักตัวตนของผม</span>
+            </div>
+        </div>
+        
+        <div class="about-grid">
+            <div class="grid-item bio-box">
+                <h3><i class="fas fa-quote-left"></i> Hello !!</h3>
+                <p>
+                    สวัสดีครับ! ผมชื่อ <strong>ยูกิ (Yuki)</strong> <br>
+                    ผมใช้เวลาว่างไปกับการเขียนโค้ดและศึกษาการเขียนโค้ค นอกจากนี้ผมยังเป็นคนที่ชื่นชอบการเล่นเกม และการรับชมอนิเมะ ซึ่งช่วยสร้างแรงบันดาลใจและเปิดมุมมองความคิดสร้างสรรค์ใหม่ ๆ ให้กับผมเสมอ
+                </p>
+            </div>
+
+            <div class="grid-item skills-box">
+                <h3>⚡ My Skills</h3>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span><i class="fab fa-html5"></i> HTML/CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span><i class="fab fa-js"></i> JavaScript</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 75%"></div></div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span><i class="fas fa-gamepad"></i> Gaming</span>
+                        <span>100%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 100%"></div></div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span><i class="fas fa-running"></i> Sport</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+                </div>
+            </div>
+
+            <div class="grid-item hobbies-box">
+                <h3>🎮 Hobbies & Interests</h3>
+                <div class="tags-container">
+                    <span class="tag"><i class="fas fa-laptop-code"></i> Coding</span>
+                    <span class="tag"><i class="fas fa-gamepad"></i> ROV / Valorant / MLBB</span>
+                    <span class="tag"><i class="fas fa-tv"></i> Anime</span>
+                    <span class="tag"><i class="fas fa-headphones"></i> Music</span>
+                    <span class="tag"><i class="fas fa-cat"></i> Sleeping</span>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-btn-large">
+            <i class="fas fa-arrow-left"></i> กลับหน้าหลัก
+        </a>
+
+    </div>
+
+    <script>
+        const glow = document.getElementById('cursor-glow');
+        let mouseX = 0, mouseY = 0, glowX = 0, glowY = 0;
+        document.addEventListener('mousemove', (e) => { mouseX = e.clientX; mouseY = e.clientY; });
+        function animateGlow() {
+            glowX += (mouseX - glowX) * 0.15;
+            glowY += (mouseY - glowY) * 0.15;
+            glow.style.left = (glowX - 30) + 'px'; 
+            glow.style.top = (glowY - 30) + 'px';
+            requestAnimationFrame(animateGlow);
+        }
+        animateGlow();
+    </script>
+</body>
+</html>
