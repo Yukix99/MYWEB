@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile - Yuki Kung</title>
+    <link rel="icon" href="https://i.pinimg.com/736x/ce/21/07/ce21071acfd1e9deb34850f70285a5f0.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -67,34 +68,32 @@
             </a>
         </div>
 
-        <div class="spotify-container">
-             <iframe 
-                style="border-radius:12px" 
-                src="https://open.spotify.com/embed/track/5TTGoX70AFrTvuEtqHK37S?utm_source=generator" 
-                width="100%" 
-                height="80" 
-                frameBorder="0" 
-                allowfullscreen="" 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                loading="lazy">
-            </iframe>
+        <div class="spotify-wrapper">
+            <div class="music-controls">
+                <button onclick="prevSong()" class="control-btn"><i class="fas fa-step-backward"></i></button>
+                <div class="song-info">
+                    <span id="song-name">Loading...</span>
+                </div>
+                <button onclick="nextSong()" class="control-btn"><i class="fas fa-step-forward"></i></button>
+            </div>
+
+            <div class="spotify-container">
+                 <iframe 
+                    id="spotify-frame"
+                    style="border-radius:12px" 
+                    src="" 
+                    width="100%" 
+                    height="80" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+                </iframe>
+            </div>
         </div>
 
     </div>
 
-    <script>
-        // Cursor Glow Effect Only
-        const glow = document.getElementById('cursor-glow');
-        let mouseX = 0, mouseY = 0, glowX = 0, glowY = 0;
-        document.addEventListener('mousemove', (e) => { mouseX = e.clientX; mouseY = e.clientY; });
-        function animateGlow() {
-            glowX += (mouseX - glowX) * 0.15;
-            glowY += (mouseY - glowY) * 0.15;
-            glow.style.left = (glowX - 30) + 'px'; 
-            glow.style.top = (glowY - 30) + 'px';
-            requestAnimationFrame(animateGlow);
-        }
-        animateGlow();
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
