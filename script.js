@@ -35,24 +35,24 @@ if (glow) {
 // ลิสต์เพลง (แก้ลิงก์ src ได้ที่นี่)
 const playlist = [
     { 
-        name: "N0. 1 Party Anthem", 
-        src: "https://open.spotify.com/embed/track/5TTGoX70AFrTvuEtqHK37S?utm_source=generator&theme=0" 
+        name: "MONTAGEM HIKARI - BellyJay", 
+        src: "https://open.spotify.com/embed/track/0XqgE9UN4MCo5ooIwUYm7l?utm_source=generator" 
     },
     { 
-        name: "sombr - back to friends",
-        src: "https://open.spotify.com/embed/track/0FTmksd2dxiE5e3rWyJXs6?utm_source=generator" 
+        name: "I Want You to Tell Me the Moon is Beautiful!",
+        src: "https://open.spotify.com/embed/track/2CSbGdlvxO4sGBEL9ZPAcZ?utm_source=generator" 
     },
     { 
-        name: "Multo", 
-        src: "https://open.spotify.com/embed/track/4cBm8rv2B5BJWU2pDaHVbF?utm_source=generator" 
+        name: "MONTAGEM YUKI", 
+        src: "https://open.spotify.com/embed/track/3jxcskPUbFoPLI3VSrAh9a?utm_source=generator" 
     },
     { 
-        name: "HEAVENLY JUMPSTYLE", 
-        src: "https://open.spotify.com/embed/track/6jC36NU3sSAFy5YjUkGGKd?utm_source=generator" 
+        name: "MONTAGEM KOE", 
+        src: "https://open.spotify.com/embed/track/5EKH1lbAiycR1EP7VwzfLv?utm_source=generator" 
     },
     { 
-    name: "Umamusume Wei", 
-        src: "https://open.spotify.com/embed/episode/6NBVhQVTWn8WGPoVzTFPa0?utm_source=generator" 
+    name: "HIKARI FUNK!", 
+        src: "https://open.spotify.com/embed/track/1MTCBfzNycWL4MnhnG2ACi?utm_source=generator" 
     }
 ];
 
